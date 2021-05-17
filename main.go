@@ -63,7 +63,7 @@ func handleCallback(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	//  sends http.client with some configurations are preconfigured
+	//  sends http.client with some configurations preconfigured
 	client := conf.Client(oauth2.NoContext, token)
 
 	resp, err := client.Get("https://google.com")
